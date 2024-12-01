@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(72, 87, 69);
+    margin: 0;
+    padding: 0;
+    
+}
+
+button[type="button"] {
+    background: white;
+    
+
+    
+}
+

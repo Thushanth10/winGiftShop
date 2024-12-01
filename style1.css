@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@1,300&display=swap');
+:root
+{
+    --clrl:rgb(0, 255, 64);
+    --clrl:#ffffff;
+    --clrl:#000000;
+    --clrl:rgb(255, 208, 0);
+    --clrl:rgb(205, 50, 50);
+}
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: italic;
+  
+}
+html {
+    font-size: 70%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+    overflow-x: hidden;
+    
+}
+html::-webkit-scrollbar-thumb {
+    background: #ac582796;
+}
+section {
+    padding: 4rem 9%;
+    margin-top: 8rem;
+} 
+section h4
+{
+    margin: 0 0 1rem 25rem;
+    padding: .2rem;
+    width: 50%;
+    font-size: 3rem;
+    color: #fff;
+    text-transform: none;
+    text-align: center;
+    align-items: center;
+    letter-spacing: .1rem;
+    clip-path: polygon(0% 15%, 32% 41%, 15% 0%, 85% 0%, 66% 41%, 100% 15%, 100% 85%, 67% 63%, 85% 100%, 15% 100%, 29% 66%, 0% 85%);
+    background: #922117c0;
+}
+section h3
+{
+    font-size: 3rem;
+    color:blue;
+    text-transform: none;
+    text-align: center;
+    letter-spacing: 0.2rem;
+}
+section p {
+    color:white;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    line-height: 2.5rem;
+    word-wrap: normal;
+}
+.btn
+{
+    margin-top: 2rem;
+    padding: 1.3rem 4rem;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    color: #000;
+    background:#fff;
+    border: none;
+    border-radius: .5rem;
+    box-shadow:0 2rem 2rem rgba(0,0,0,0.1);
+    transition: all .3s ease;
+    cursor: pointer;
+    outline: none;
+}
+.btn:hover
+{
+    background-color: #000;
+    box-shadow: 0.2rem  2rem rgba(255,85,94,0.4);
+    color: #fff;
+    transform: translateY(-1rem);
+}
+.head 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    background: silver;
+    color:black;
+    padding: 3rem 9%;
+    align-items: center;
+    justify-content: space-between;
+}
+.head h1
+{
+    font-size:2.5rem;
+}
+.head .navbar a
+{
+    color:darkblue;
+    font-size:1.6rem;
+    font-weight:600;
+    margin: 0 2rem;
+}
+.head .navbar a:hover
+{
+    color:#000;
+    transition: .4s ease;
+}    
+.home {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(pic2.jpg);
+    background-size: cover;
+    background-position: center;
+    
+ }
+ .home-content {
+
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr;
+    
+}
+.inner-content {
+    max-width: 70rem;
+    margin-top: 13rem;
+    text-align: center;
+}
+
+/*----------------------------menu section--------------------*/
+.menu-content
+{
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr;
+    grid-gap: 1rem;
+    flex-wrap: wrap;
+}
+.in-box
+{
+    padding: 1rem 2rem;
+    text-align: center;
+    border: .1rem solid black;
+    background:silver;
+}
+.in-box:hover
+{
+    background:white;
+    transition: .4s ease all;
+}
+.in-box img 
+{
+    width: 20rem;
+    height: auto;
+}
+.in-box .far
+{
+    position: absolute;
+    font-size: 2.5rem;
+    margin-left: .7rem;
+    color: white;
+}
+.in-box .veg-icon
+{
+    margin-left: 22rem;
+    position:absolute;
+    width: 3rem;
+}
+.star,
+.Price
+{
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    font-size: 800;
+    color: black;
+    text-transform: capitalize;
+}
+
+.in-content h2,
+.in-content p
+{
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-size: 600;
+    text-transform: capitalize;
+}
+.fa-star
+{
+    color:green;
+}
+.in-box .far
+{
+    font-size: 2rem;
+    color: #000;
+}
+.in-box .fa-plus-circle
+{
+    color:black;
+}
+.contact {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.contact h4 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact form button:hover {
+    background-color: #005f73;
+}
+
+.contact-details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-details h5 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    color: #333;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
